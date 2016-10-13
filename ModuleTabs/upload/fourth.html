@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Your description goes here" />
+        <meta name="keywords" content="your,keywords,goes,here" />
+        <meta name="author" content="Your Name" />
+        <link rel="stylesheet" type="text/css" href="css/default-5.css" media="screen,projection" />
+        <title>Fourth - Module Tabs</title>
+        <script type="text/javascript" language="javascript" charset="utf-8">
+        // <![CDATA[
+            //Just to change stylesheet
+            function bindClick(doc) {
+                doc.getElementById("select_style").onchange = function(e) {
+                    var link = this.selectedOptions[0].value;
+                    doc.getElementsByTagName("link")[0].href = link;
+                }
+            }
+        // ]]>
+        </script>
+    </head>
+
+    <body id="fourth" onload="bindClick(window.document);">
+        <div id="container">
+            <div id="header"> 
+                <ul> 
+                    <li><div class="logo"></div></li> 
+                    <li><h1> Module Tabs</h1> </li> 
+                </ul>
+            </div>
+            <div id="nav">
+                <div id="nav_left"></div>
+                <ul>
+                    <li><a href="first.html">First</a></li>
+                    <li><a href="second.html">Second</a></li>
+                    <li><a href="third.html">Third</a></li>
+                    <li><a href="fourth.html">Fourth</a></li>
+                    <li><a href="fifth.html" id="no_separator">Fifth</a></li>
+                </ul>
+                <div id="nav_right"></div>
+            </div>
+            <div id="content">
+                <!--begin-->
+                4
+                <!--end-->              
+                <h3>Choose Style</h3>
+                <div class="clipbox">
+                    <select id="select_style">
+                        <option value="css/default.css">Default</option>
+                        <option value="css/default-1.css">Default(1)</option> 
+                        <option value="css/default-2.css">Default(2)</option>
+                        <option value="css/default-3.css">Default(3)</option>
+                        <option value="css/default-4.css">Default(4)</option> 
+                        <option value="css/default-5.css">Default(5)</option>  
+                        <option value="css/default-6.css">Default(6)</option> 
+                    </select> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

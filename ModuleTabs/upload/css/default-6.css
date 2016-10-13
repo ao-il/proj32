@@ -1,0 +1,108 @@
+body { display: block; font-family: Arial, Verdana, Sans-serif; margin: 0; }
+
+.logo {
+    border-top: 10px solid orangered;
+    border-bottom: 10px solid darkorange;
+    border-right: 10px solid darkgreen; 
+    border-left: 10px solid green;
+    width: 0;
+    height: 0;
+    padding: 0;
+    font-size: 1px;
+}
+
+#header { height: 40px; } 
+#header ul li h1 { 
+    color: #303030; 
+    margin: 0; 
+    padding:0; 
+    line-height: 21px; 
+    font-size: 24px
+} 
+#header ul { padding: 0; margin: 10px 0; height: 22px}
+#header ul li { 
+    float: left; 
+    list-style-type: none; 
+    margin: 0;
+    height: 22px;
+    padding: 0 5px;   
+}
+
+#container {
+   text-align:left;
+   padding: 10px;
+   background: #eeeeff; 
+}
+
+#nav { 
+    width: 6.5in; 
+    height: 34px; 
+    line-height: 24px;
+}
+
+#nav div, #nav ul { float: left; }
+
+
+#nav #nav_left { border-right: 1px solid #ffffff }
+#nav #nav_right { border-left: 1px solid #ffffff; }
+
+/* nav_left, nav_right */
+#nav div { 
+    border-top: 2px solid #eeeeff;
+    border-bottom: 2px solid #eeeeff;
+    width: 0; height: 30px;
+}
+
+
+#nav ul { margin: 0; padding:0; }
+
+#nav ul li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    white-space: nowrap;
+    padding: 0;
+}
+
+#nav ul li a {
+    display: block;
+    white-space:nowrap; 
+    text-decoration: none; 
+    padding: 5px 7px;
+    color: #606060;
+    border-right: 2px dotted #dddddd;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    width: 1in;
+    background: white;
+    text-align: center;
+}
+
+#nav ul li a#no_separator { border-right: 0 }
+
+#nav ul li a:hover {
+    color: #303030; 
+}
+
+#content {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+    background: white;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    height: 8.5in;
+    margin-top: 5px;
+}
+
+#first #nav ul li a[href^=first], #second #nav ul li a[href^=second], 
+#third #nav ul li a[href^=third], #fourth #nav ul li a[href^=fourth], 
+#fifth #nav ul li a[href^=fifth] {
+    background: #ffd078;
+    color: #303030; 
+}
+
+#first #nav #nav_left { border-right-color: #ffd078; }
+
+#fifth #nav #nav_right { border-left-color: #ffd078; }
