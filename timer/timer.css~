@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Black Ops One";
+    src: url(BlackOpsOne-Regular.ttf);
+}
+html { height: 100% }
+body {
+    background-color: #454545;
+    font-family: "Mako","Black Ops One", Arial, sans-serif;   
+    color: #ffffff;   
+    height: 100%; 
+    margin: 0;
+    overflow: hidden;   
+}
+
+span {
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    max-width: 800px;
+    font-size: 72px;
+    text-align: center;
+    -moz-user-select: none;
+}
+
+span#title {
+    text-transform: lowercase;
+}
+
+span#title:first-letter {
+    text-transform: uppercase;
+}
+
+span#minutes {
+    letter-spacing: 2px;
+    font-size: 120px;
+    font-family: "Black Ops One", Arial, sans-serif;
+}
+
+input {
+    border: 1px solid #404040;
+    height: 24px;
+    border-radius:2px;   
+}
+
+form {
+    margin: 5px;
+    width: 800px;
+}
+
+table {
+    height: 100%;
+    width: 100%;
+    min-width: 600px;
+    min-height: 450px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+.alert-filter {
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px; 
+    font-size: 72px; 
+    cursor: default;
+    -moz-user-select: none;
+}
+
+#in_minutes {
+    margin-right: 10px;
+    width: 0.7in;
+}
+
+#in_title {
+    width: 3in;
+}
+
+#in_title, #in_minutes {
+    padding-left: 4px;
+}
+
+#btn_start, #btn_flash, #btn_alert {
+    width: 1in;
+    font-weight: bold;
+    color: #ffffff;
+    background: #707070;
+    height: 28px;
+}
+
+#header, #footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 0.5in;
+    background-color: #454545;
+    
+}
+
+#header {
+    top: 0;
+    border-bottom: 1px solid #303030;
+}
+
+#footer {
+    bottom: 0;
+    border-top: 1px solid #303030;
+    padding: 5px;
+    font-size: 10px;
+}
+
+#seconds {
+    float: right;
+    height: 42px; 
+    width: 60px; 
+}
+

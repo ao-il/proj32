@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta name="generator" content="Bluefish 2.2.6" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="AMADIN" />
+  <link rel="stylesheet" type="text/css" href="timer.css" />
+  <script type="text/javascript" src="timer.js"></script>
+
+  <title>timer</title>
+</head>
+
+<body>
+  <div id="header">
+  <form>
+    <input id="in_title" type="text" placeholder="Title" title="Enter title"/>
+    <input id="in_minutes" type="number" title="Enter minutes (> 0)" min="1"/>
+    <input id="btn_start" type="button" value="START"/>   
+    <input id="btn_flash" type="button" value="FLASH"/> 
+    <input id="btn_alert" type="button" value="ALERT..."/> 
+  </form>
+  </div>
+
+  <table id="container">
+    <tr>
+      <td>
+        <span id="title">Untitled</span>
+
+        <span id="minutes">0</span><img id="seconds" src="seconds.png" />
+
+        <span>min</span>
+      </td>
+    </tr>
+  </table>
+
+  <div id="footer">
+    &copy; Copyright 2015 - | Compatibility with firefox.
+    
+  </div>
+</body>
+</html>
